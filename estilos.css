@@ -1,0 +1,75 @@
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #00ff00;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #00ff00;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #00ff00;
+}
+
+h2 {
+    color: #00ff00;
+}
+
+ul, ol {
+    color: #00ff00;
+}
+
+a {
+    color: #00ff00;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #00ff00;
+}
+
+/* Estilo inspirado en Matrix */
+section, footer {
+    background: url('matrix-code.jpg') repeat;
+    background-size: cover;
+}
+
+/* Cambio de color de fondo al pasar el ratón sobre los enlaces */
+a:hover {
+    background-color: #333;
+}
+
+/* Efecto de máquina de escribir para los títulos */
+h1, h2 {
+    overflow: hidden; /* Para ocultar el texto desbordante */
+    white-space: nowrap; /* Para evitar el salto de línea */
+    border-right: 2px solid #00ff00; /* Borde simulando el cursor de escritura */
+    animation: typing 3s steps(40) 1s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
